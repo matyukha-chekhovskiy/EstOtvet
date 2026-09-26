@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+	background-color: #FFFFFF;
+	font-family: "Roboto", sans-serif;
+}
+
+.container
+{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.block-logo
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFFFFF;
+    padding: 8px 14px;
+}
+
+.subBlock-logo h1
+{
+	font-size: 1.25rem;
+	font-weight: medium;
+	color: #000000;
+}
+
+.subBlock-logo p
+{
+	font-size: 0.625rem;
+	font-weight: medium;
+	color: #000000;
+	margin-top: 2px;
+}
+
+.block-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+.search {
+	position: relative;
+	width: 330px;
+	height: 53px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	gap: 12px;
+	background-color: #E6E6E6;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.searchInput:focus {
+	outline: none;
+	border: none;
+} 
+
+
+.search img{
+	width: 18px;
+	height: 18px;
+}
+
+.searchInput {
+	border: none;
+	font-size: 1rem;
+}
+
+.mainButton
+{
+	position: relative;
+	width: 330px;
+	height: 53px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	background-color: #0088FF;
+	color: #FFFFFF;
+	gap: 9px;
+	border-radius: 999px;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.imgBtn {
+	width: 20px;
+	height: 20px;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+.section
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.section h2 {
+	font-size: 1.125rem;
+}
+
+.mainBlocksQuestions {
+	display: flex;
+	flex-wrap: wrap;
+    gap: 6px;
+	justify-content: flex-start;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 9px;
+	border: 1px solid #E5E7EB;
+	border-radius: 12px;
+	width: 180px;
+	min-height: 180px;
+	padding: 12px;
+	margin-top: 12px;
+}
+
+.cards p {
+	font-size: 0.75rem;
+}
+
+.bottomCards {
+	display: flex;
+    align-items: center; 
+    gap: 4px;        
+    width: 100%;
+}
+
+.bottomCards imgCards {
+	width: 20px;
+	height: 20px;
+}
+
+.subButtomCards {
+	font-size: 0.625rem;
+}
+
+.subButtomCards span {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background-color: #FFCC00;
+	border-radius: 50%;
+}
