@@ -167,6 +167,10 @@ body
 
 .subButtomCards {
 	font-size: 0.625rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
 }
 
 .subButtomCards span {
