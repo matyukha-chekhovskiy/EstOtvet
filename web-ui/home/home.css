@@ -43,6 +43,10 @@ body
 	font-weight: medium;
 	color: #000000;
 	margin-top: 2px;
+	background-color: #EDEDED;
+	padding: 4px;
+	width: max-content;
+	border-radius: 5px;
 }
 
 .block-logo img {
@@ -64,6 +68,8 @@ body
 	background-color: #E6E6E6;
 	margin: 0 auto;
 	box-sizing: border-box;
+	border-radius: 999px;
+	padding: 17px;
 }
 
 .searchInput:focus {
@@ -100,6 +106,7 @@ body
 	border: none;
 	cursor: pointer;
 	font-size: 1rem;
+	margin-top: 12px;
 }
 
 .imgBtn {
@@ -136,7 +143,7 @@ body
 	gap: 9px;
 	border: 1px solid #E5E7EB;
 	border-radius: 12px;
-	width: 180px;
+	width: max-content;
 	min-height: 180px;
 	padding: 12px;
 	margin-top: 12px;
