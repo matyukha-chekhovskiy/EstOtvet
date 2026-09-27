@@ -83,6 +83,7 @@ body {
     height: 56px;
     background-color: #E5E5EA;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .main-btn .btn .list {
@@ -101,7 +102,6 @@ body {
     width: 100%;
     margin-right: 15px;
     opacity: 20%;
-    cursor: pointer;
 }
 
 .main-btn .stat {
