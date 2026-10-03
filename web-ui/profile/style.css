@@ -22,48 +22,48 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-}
 
-.top-info .fav-btn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    right: 20px;
-    background-color: #8E8E93;
-    border-radius: 999px;
-    cursor: pointer;
-}
+    .fav-btn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        right: 20px;
+        background-color: #8E8E93;
+        border-radius: 999px;
+        cursor: pointer;
+    
+        .position {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
 
-.top-info .fav-btn .position {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-}
+            img {
+                width: 22px;
+            }
+        }
+    }
 
-.top-info .fav-btn .position img {
-    width: 22px;
-}
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
 
-.top-info .user-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    text-align: center;
-}
+        .name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #060708;
+        }
 
-.top-info .user-info .name {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #060708;
-}
-
-.top-info .user-info .username {
-    font-weight: 400;
-    color: #060708;
-    opacity: 52%;
+        .username {
+            font-weight: 400;
+            color: #060708;
+            opacity: 52%;
+        }
+    }
 }
 
 .main-btn {
@@ -73,80 +73,80 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
 
-.main-btn .btn {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    width: 300px;
-    height: 56px;
-    background-color: #E5E5EA;
-    border-radius: 16px;
-    cursor: pointer;
-}
+    .btn {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        width: 300px;
+        height: 56px;
+        background-color: #E5E5EA;
+        border-radius: 16px;
+        cursor: pointer;
 
-.main-btn .btn .list {
-    margin-left: 14px;
-    opacity: 50%;
-}
+        .list {
+            margin-left: 14px;
+            opacity: 50%;
+        }
 
-.main-btn .btn .status-text {
-    margin-left: 12px;
-    font-weight: 500;
-}
+        .status-text {
+            margin-left: 12px;
+            font-weight: 500;
+        }
 
-.main-btn .btn .arrow {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    margin-right: 15px;
-    opacity: 20%;
-}
+        .arrow {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            margin-right: 15px;
+            opacity: 20%;
+        }
+    }
 
-.main-btn .stat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
+    .stat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
 
-.main-btn .stat .btn2 {
-    display: flex;
-    align-items: center;
-    width: 250px;
-    height: 56px;
-    gap: 4px;
-    background-color: #E5E5EA;
-    border-radius: 16px;
-}
+        .btn2 {
+            display: flex;
+            align-items: center;
+            width: 250px;
+            height: 56px;
+            gap: 4px;
+            background-color: #E5E5EA;
+            border-radius: 16px;
 
-.main-btn .stat .btn2 .answer {
-    margin-left: 14px;
-}
+            .answer {
+                margin-left: 14px;
+            }
 
-.main-btn .stat .btn2 .counts {
-    font-weight: 700;
-}
+            .counts {
+                font-weight: 700;
+            }
+        }
 
-.main-btn .stat .arrow-btn {
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(32, 54, 110, .1);
-    border-radius: 999px;
-    cursor: pointer;
-}
+        .arrow-btn {
+            width: 40px;
+            height: 40px;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(32, 54, 110, .1);
+            border-radius: 999px;
+            cursor: pointer;
 
-.main-btn .stat .arrow-btn .position {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-}
+            .position {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                justify-content: center;
+            }
 
-.main-btn .stat .arrow-btn img {
-    width: 8px;
+            img {
+                width: 8px;
+            }
+        }
+    }
 }
