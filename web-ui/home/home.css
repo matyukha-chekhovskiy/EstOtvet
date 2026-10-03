@@ -5,12 +5,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+	font-family: "Roboto", sans-serif;
 }
 
 body
 {
 	background-color: #FFFFFF;
-	font-family: "Roboto", sans-serif;
 }
 
 .container
@@ -21,40 +21,43 @@ body
     padding: 14px; 
 }
 
-.block-logo
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #FFFFFF;
-    padding: 8px 14px;
+.header {
+	.block-logo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #FFFFFF;
+		padding: 8px 14px;
+
+		.subBlock-logo {
+			h1 {
+				font-size: 1.25rem;
+				font-weight: 500;
+				color: #000000;
+			}
+
+			p {
+				font-size: 0.625rem;
+				font-weight: medium;
+				color: #000000;
+				margin-top: 2px;
+				background-color: #EDEDED;
+				padding: 4px;
+				width: max-content;
+				border-radius: 5px;
+			}
+		}
+
+		.img {
+			width: 50px;
+			height: 50px;
+			border-radius: 999px;
+			object-fit: cover;
+			}
+		}
 }
 
-.subBlock-logo h1
-{
-	font-size: 1.25rem;
-	font-weight: 500;
-	color: #000000;
-}
 
-.subBlock-logo p
-{
-	font-size: 0.625rem;
-	font-weight: medium;
-	color: #000000;
-	margin-top: 2px;
-	background-color: #EDEDED;
-	padding: 4px;
-	width: max-content;
-	border-radius: 5px;
-}
-
-.block-logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 999px;
-    object-fit: cover;
-}
 
 .search {
 	position: relative;
@@ -70,24 +73,23 @@ body
 	box-sizing: border-box;
 	border-radius: 999px;
 	padding: 17px;
-}
 
-.searchInput:focus {
-	outline: none;
-	border: none;
-} 
+	img {
+		width: 18px;
+		height: 18px;
+	}
+	
+	.searchInput {
+		border: none;
+		background: transparent;
+		font-size: 1rem;
+		outline: none;
 
-
-.search img{
-	width: 18px;
-	height: 18px;
-}
-
-.searchInput {
-	border: none;
-	background: transparent;
-	font-size: 1rem;
-	outline: none;
+		&:focus {
+		outline: none;
+		border: none;
+		}
+	}
 }
 
 .mainButton
@@ -107,76 +109,78 @@ body
 	cursor: pointer;
 	font-size: 1rem;
 	margin-top: 12px;
-}
+	
+	&:hover {
+		opacity: 0.8;
+	}
 
-.imgBtn {
-	width: 20px;
-	height: 20px;
-}
 
-.button:hover {
-	opacity: 0.8;
+	.imgBtn {
+		width: 20px;
+		height: 20px;
+	}
+
 }
 
 .section
 {
 	display: flex;
 	flex-direction: column;
-}
 
-.section h2 {
-	font-size: 1.125rem;
-	margin-top: 27px;
-}
+	h2 {
+		font-size: 1.125rem;
+		margin-top: 27px;
+	}
 
-.mainBlocksQuestions {
-	display: flex;
-	flex-wrap: wrap;
-    gap: 6px;
-	justify-content: flex-start;
-}
+	.mainBlocksQuestions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		justify-content: flex-start;
+		
+		.cards {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 9px;
+			border: 1px solid #E5E7EB;
+			border-radius: 12px;
+			width: max-content;
+			min-height: 180px;
+			padding: 12px;
+			margin-top: 12px;
 
-.cards {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 9px;
-	border: 1px solid #E5E7EB;
-	border-radius: 12px;
-	width: max-content;
-	min-height: 180px;
-	padding: 12px;
-	margin-top: 12px;
-}
+			p {
+				font-size: 0.75rem;
+			}
 
-.cards p {
-	font-size: 0.75rem;
-}
+			.bottomCards {
+				display: flex;
+				align-items: center; 
+				gap: 4px;        
+				width: 100%;
 
-.bottomCards {
-	display: flex;
-    align-items: center; 
-    gap: 4px;        
-    width: 100%;
-}
+				.imgCards {
+					width: 20px;
+					height: 20px;
+				}
 
-.bottomCards imgCards {
-	width: 20px;
-	height: 20px;
-}
+				.subButtomCards {
+					font-size: 0.625rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 4px;
 
-.subButtomCards {
-	font-size: 0.625rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 4px;
-}
-
-.subButtomCards span {
-	display: inline-block;
-	width: 4px;
-	height: 4px;
-	background-color: #FFCC00;
-	border-radius: 50%;
+					span {
+						display: inline-block;
+						width: 4px;
+						height: 4px;
+						background-color: #FFCC00;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
 }
