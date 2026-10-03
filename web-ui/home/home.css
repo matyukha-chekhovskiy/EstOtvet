@@ -85,6 +85,10 @@ body
 		font-size: 1rem;
 		outline: none;
 
+		&::placeholder {
+		font-size: 0.90rem;
+	}
+
 		&:focus {
 		outline: none;
 		border: none;
