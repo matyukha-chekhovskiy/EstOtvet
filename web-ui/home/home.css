@@ -134,21 +134,22 @@ body
 	}
 
 	.mainBlocksQuestions {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 6px;
-		justify-content: flex-start;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 12px;
+		margin-top: 12px;
+		width: 100%;
 		
 		.cards {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			gap: 9px;
+			gap: 16px;
 			border: 1px solid #E5E7EB;
 			border-radius: 12px;
-			width: max-content;
-			min-height: 180px;
-			padding: 12px;
+			width: 100%;
+			min-height: 140px;
+			padding: 16px;
 			margin-top: 12px;
 
 			p {
